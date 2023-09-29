@@ -1,0 +1,64 @@
+*******************************************
+Season -1 Selenium  
+Day  - 29th  September  - Friday
+*******************************************	
+
+
+Selenium 
+
+is an API or jar/s 
+
+Java is also an API 
+
+https://www.selenium.dev/
+
+
+Selenium automates browsers. That's it!
+
+
+
+Latest Version : 4.13.0 (September 25, 2023)  == we don't use latest version because of compatability issues
+
+Previous Releases
+Here you can find a more complete list of Selenium releases.
+
+Lonterm Stable Version : 
+
+selenium-server-standalone-3.141.59.jar
+
+
+
+how to add any jar to eclipse Java project ?
+
+right click on project -> go to build path -> configure build path --> click on Libraries tab --> 
+click on classpath --> click on Add exteernal jars button -> choose the jar from the location where you have downloaded 
+-> Click open -> apply -->apply and close 
+
+Now you see the jars under 
+Referenced Libraries in the project 
+
+--------------------------------
+org.openqa.selenium
+
+Exception in thread "main" java.lang.IllegalStateException: 
+The path to the driver executable must be set by the webdriver.chrome.driver system property; 
+for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.
+The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+
+webdrivermanager download
+
+https://github.com/bonigarcia/webdrivermanager
+
+webdrivermanager-5.5.3
+
+webdrivermanager-5.5.3-fat.jar
+
+?????????????????????????????????????
+Assignment 
+
+to launch firefox browser and edge browser ?
+using both methods 
+
+?????????????????????????????????????
+
+
