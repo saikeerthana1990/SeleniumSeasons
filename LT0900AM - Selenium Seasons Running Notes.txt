@@ -62,3 +62,68 @@ using both methods
 ?????????????????????????????????????
 
 
+*******************************************
+Season -1 Selenium  
+Day  - 3rd October - Tuesday
+*******************************************	
+
+
+for methods remember 3 points: 
+
+1. what arguments/paremters 
+2. what is the return type
+3. what does the method do 
+
+
+-------------------------------------
+Methods In WebDriver (13 methods)
+-------------------------------------
+
+
+
+
+findElement(By)
+findElements(By)
+
+getCurrentUrl()
+getPageSource()
+getTitle()
+getWindowHandle()
+getWindowHandles()
+manage()
+navigate()
+
+switchTo()
+
+
+subinterfaces:
+
+org.openqa.selenium.WebDriver.ImeHandler
+org.openqa.selenium.WebDriver.Navigation
+org.openqa.selenium.WebDriver.Options
+org.openqa.selenium.WebDriver.TargetLocator
+org.openqa.selenium.WebDriver.Timeouts
+org.openqa.selenium.WebDriver.Window
+
+
+-------------------------------
+get(String):void 
+
+here String is URL of app 
+---------------------------------
+close():void  this method will close the tab or window on which webdriver focus is 
+
+close methodd will close only one tab 
+
+
+------------------------------------
+
+quit():void this method will close all tabs or windows opened during that session 
+
+Interview :  diff b/w close and quit 
+
+Close : will close one tab or window on which webdriver focus is 
+ -> this will not kill chromedriver.exe task running in the backend
+
+quit : will close all tabs/windows opened during that session 
+-> this will  kill chromedriver.exe task running in the backend
