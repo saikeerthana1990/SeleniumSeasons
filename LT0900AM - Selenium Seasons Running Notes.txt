@@ -85,15 +85,14 @@ Methods In WebDriver (13 methods)
 findElement(By)
 findElements(By)
 
-getCurrentUrl()
-getPageSource()
-getTitle()
-getWindowHandle()
-getWindowHandles()
-manage()
-navigate()
 
-switchTo()
+
+
+
+
+
+
+
 
 
 subinterfaces:
@@ -127,3 +126,124 @@ Close : will close one tab or window on which webdriver focus is
 
 quit : will close all tabs/windows opened during that session 
 -> this will  kill chromedriver.exe task running in the backend
+-----------------------------------------------
+getTitle():String 
+
+---------------------------------------------------
+getCurrentUrl() :String 
+-----------------------------------------------------
+getPageSource():String 
+---------------------------------------------------
+
+getWindowHandle():String 
+
+0-9 A-F 
+
+6E52B5F1ADB7E7032406E896732180DC
+
+-------------------------------------------------------
+
+getWindowHandles():Set<String> 
+
+------------------------------------------------------
+
+manage(): Options
+
+driver.manage().window().maximize();
+
+-----------------------------------------------------
+switchTo():TargetLocator
+
+-------------------------------------------
+
+navigate():Navigation
+
+back()
+forward()
+refresh()
+to(String)
+to(URL)
+
+
+*******************************************
+Season -1 Selenium  
+Day  - 4th October - Wednesday
+*******************************************	
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------
+get(String) : void
+close():void
+quit():void
+getTitle():String
+getCurrentUrl():String 
+getPageSource():String 
+getWindowHandle():String 
+getWindowHandles():Set<String>
+manage():Options
+navigate():Navigation
+switchTo():TargetLocator
+
+
+findElement(By):WebElement  anything you find on web page is WebElement ( link , text , img , radio etc ..)
+findElements(By):
+
+
+Locators in Selenium :
+
+className(String)
+cssSelector(String)
+id(String)
+linkText(String)
+name(String)
+partialLinkText(String)
+tagName(String)
+xpath(String)
+
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="e4hu8q">
+
+<a href="Register.php">New User Register Here</a>
+
+HTML Termiologies :
+
+<tagname attribute1="value of attribute1"  attribute2="value of attribute2"  ....>
+
+
+<tagname attribute1="value of attribute1"  attribute2="value of attribute2"    >text on element</tagname>
+
+
+Locators based on attributes :
+id(String)
+name(String)
+className(String)
+
+Locators based on link text  :
+
+only meant for links (links will have tagname a also called as anchor tag)
+
+linkText(String)
+
+partialLinkText(String)
+
+
+Loocators based on tagname and/or attributes and/or text on element
+
+xpath(String)
+cssSelector(String)
+
+Locators based on tagname :
+
+tagName(String) : this is not prefered to focus single webelement 
+
+used for focusing or collectiong more than one webelement 
