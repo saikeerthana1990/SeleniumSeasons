@@ -247,3 +247,65 @@ Locators based on tagname :
 tagName(String) : this is not prefered to focus single webelement 
 
 used for focusing or collectiong more than one webelement 
+
+
+*******************************************
+Season -1 Selenium  
+Day  - 5th October - Thursday
+*******************************************	
+
+
+
+
+Methods In WebElement (16)
+
+
+
+findElement(By)
+findElements(By)
+
+
+
+getTagName()
+
+isDisplayed()
+isEnabled()
+isSelected()
+
+submit()
+
+
+sendKeys(CharSequence...):void
+
+CharSequence... also called String 
+
+--------------------------
+click():void 
+
+------------------------------
+
+clear():void this is used for input tagname (text feilds)
+
+---------------------------------
+getText():String
+----------------------------------
+getAttribute(String)
+
+case 1: attribute having value 
+o/p : value of attribute
+
+case 2: attribute doesn't exist 
+o/p : null 
+
+case 3: attribte havinng no value 
+o/p : true ( we will discuss this in radio button and check boxes topic)
+
+
+---------------------------------------
+getCssValue(String):String
+---------------------------------
+
+getLocation():point  x and y coordinates
+getRect():Rectangle   ( x and y , height and width)
+getSize():Dimension   height and width 
+------------------------------------------
