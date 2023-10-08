@@ -261,20 +261,16 @@ Methods In WebElement (16)
 
 
 
-findElement(By)
-findElements(By)
+findElement(By):WebElement
+findElements(By):List<WebElement>
 
 
 
-getTagName()
-
-isDisplayed()
-isEnabled()
-isSelected()
-
-submit()
 
 
+
+
+----------------------------------------------------
 sendKeys(CharSequence...):void
 
 CharSequence... also called String 
@@ -289,7 +285,7 @@ clear():void this is used for input tagname (text feilds)
 ---------------------------------
 getText():String
 ----------------------------------
-getAttribute(String)
+getAttribute(String):String
 
 case 1: attribute having value 
 o/p : value of attribute
@@ -309,3 +305,67 @@ getLocation():point  x and y coordinates
 getRect():Rectangle   ( x and y , height and width)
 getSize():Dimension   height and width 
 ------------------------------------------
+
+isDisplayed():boolean
+isEnabled():boolean
+isSelected():boolean  ==> dropdown , check box , radio button 
+
+------------------------------------
+
+getTagName():String 
+-------------------------------------
+
+submit(): 
+
+to submit a form to server 
+
+----------------------------------------
+
+
+*******************************************
+Season -1 Selenium  
+Day  - 7th October - Saturday
+*******************************************	
+
+Links :
+
+<a href="ForgotPassword.php">Forgot Password?</a>
+
+<a href="https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&amp;utm_medium=footer&amp;utm_source=GW&amp;ref_=footer_assoc" class="nav_a">Become an Affiliate</a>
+
+tagname is "a" also called anchor tag 
+
+
+--------------------------------------------
+
+Dropdown :
+
+
+to select some item from dropdown we have 2 ways 
+
+1) conventional way 
+
+using sendKeys
+
+2) Select class 
+
+
+Select   
+
+org.openqa.selenium.support.ui
+
+new Select(WebElement);
+
+selectByIndex(int)  here int is index of item starting from 0
+selectByValue(String)
+selectByVisibleText(String)
+
+
+?????????????????????????????
+Assignment 
+
+in https://www.facebook.com/
+click on "Create new account" 
+select your date of birth
+
+????????????????????????????????????????????
