@@ -369,3 +369,107 @@ click on "Create new account"
 select your date of birth
 
 ????????????????????????????????????????????
+
+*******************************************
+Season -2 Java   
+Day  - 8th October - Sunday
+*******************************************
+
+Arrays :
+
+
+Disadvantages :
+
+1. arrays doesn't have growable nature 
+
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at sep30th.ArraysDemo3.main(ArraysDemo3.java:23)
+
+2. arrays can't store hetrogenous or disimilar datatypes 
+
+3. no predfiened methods for arrays 
+
+
+======================================
+Collections in Java 
+======================================
+
+Collection is framework or API 
+
+
+							
+								Collection(I)
+								
+								
+				List(I)				Queue(I)			Set(I)	
+	
+			- ArrayList(C)								- HashSet(C)
+			- LinkedList(C)								- LinkedHashSet(C)
+			- Vector(C)									- SortedSet(I)
+			 - Stack(C)										- TreeSet(C)
+	
+	
+findElements(By):List<WebElement>   ArrayList(C)	
+getWindowHandles():Set<String> HashSet(C)
+	
+	
+	Collection (I):
+
+
+add(E):boolean 
+
+returns true when element is added to collection 
+returns false when element is not added to collection 
+
+addAll(Collection<? extends E>):boolean
+
+contains(Object):boolean 
+
+isEmpty():boolean
+
+remove(Object):boolean 
+
+size():int 
+
+
+============================
+List(I)
+
+add(int, E):void 
+
+
+get(int):E  ==> to retrive item from collection based on index 
+
+indexOf(Object):int 
+lastIndexOf(Object):int 
+
+remove(int):E 
+
+subList(int, int):List<E>
+
+================================
+
+ArrayList(C)
+
+
+ArrayList()
+ArrayList(int)
+ArrayList(Collection<? extends E>)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
