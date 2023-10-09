@@ -452,19 +452,64 @@ subList(int, int):List<E>
 ArrayList(C)
 
 
-ArrayList()
-ArrayList(int)
+ArrayList() // with intial capacity 10
+ArrayList(int)  
 ArrayList(Collection<? extends E>)
 
+*******************************************
+Season -2 Java   
+Day  - 9th October - Monday
+*******************************************
 
 
 
+Set(I)
 
 
 
+add(E):boolean 
+
+returns true when element is added to collection 
+returns false when element is not added to collection 
+
+addAll(Collection<? extends E>):boolean
+
+contains(Object):boolean 
+
+isEmpty():boolean
+
+remove(Object):boolean 
+
+size():int 
+
+
+HashSet(C): 
+
+
+here insertion of items or collection of items is based on hashing technique 
+
+this will internally use HashMap to store elements 
 
 
 
+HashSet()   //  default initial capacity (16) and load factor (0.75)
+HashSet(int)
+HashSet(int, float)
+HashSet(int, float, boolean)
+HashSet(Collection<? extends E>)
+
+
+
+To retrive or get items from HashSet we can use 
+
+1) for-each loop 
+
+2) using cursor concept called iterator()
+
+iterator():Iterator<E>
+
+hasNext():boolean  == it will return true if element is present in next level
+next():E  ==>   it will reterive the element present in next and also moves the cursor or iterator to next level 
 
 
 
