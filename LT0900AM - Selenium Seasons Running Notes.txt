@@ -512,7 +512,111 @@ hasNext():boolean  == it will return true if element is present in next level
 next():E  ==>   it will reterive the element present in next and also moves the cursor or iterator to next level 
 
 
+*******************************************
+Season -2 Java   
+Day  - 10th October - Tuesday
+*******************************************
 
+
+		Array List             			vs			HashSet
+		
+1. insertion order is preserved						1. insertion order is not preserved 
+
+2. same as arrays 									2. uses hashing to store elements
+
+3. duplicates are allowed							3. duplicates are not allowed 
+
+4. to reterive element we have get method  			4. here no get method we should use for-each loop and Iterator
+	
+		
+---------------------------------------------
+Exception Handling :
+
+		
+	
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at oct10th.ExceptionDemo1.main(ExceptionDemo1.java:20)	
+		
+
+
+
+try catch 
+
+
+try
+{
+
+//risky code (means which may give runtime)
+
+}
+catch(ExceptionName reference)
+{
+
+//handling code 
+or
+//user friendly code
+
+}
+finally
+{
+
+//compulsory code 
+
+
+}
+
+-----------------------------------------
+
+Thowable(C)
+
+
+getMessage():String 
+
+printStackTrace():void ==> this will print all the exception info on console 
+
+
+							Exception
+							
+							
+		1) checked exceptions				2)unchecked exception
+
+
+https://i0.wp.com/www.benchresources.net/wp-content/uploads/2017/02/exception-hierarchy-in-java.png
+
+
+5 keywords 
+
+
+try    catch   finally   throws   throw
+
+
+finally is a block can be present immediately after try or catch block 
+
+this block will be executed irrespective of exception 	
+							
+
+try catch
+
+
+try catch catch ... 
+
+try finally
+
+try catch catch ... finally 
+
+
+*******************************************
+Season -2 Java   
+Day  - 10th October - Tuesday
+*******************************************
+
+throw :
+
+to define user defined or custom exception 
+
+
+-------------------------------------
+Links Testing 
 
 	
 
