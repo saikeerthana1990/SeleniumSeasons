@@ -618,7 +618,153 @@ to define user defined or custom exception
 -------------------------------------
 Links Testing 
 
+*******************************************
+Season -2 Selenium   
+Day  - 12th October - Thursday
+*******************************************
 	
+
+findElements(By):List<WebElement>
+
+
+---------------------------------------------
+Xpath Writing techniques
+
+Xpath means XML path is a query lang to find XML nodes 
+
+HMTL is implementation of XML 
+
+									Xpath 
+									
+									
+			Absolute							Relative
+
+
+/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input
+
+/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input
+
+Relative :
+
+//tbody/tr[2]/td[2]/input
+
+			
+
+HTML Termiologies :
+
+<tagname attribute1="value of attribute1"  attribute2="value of attribute2"  ....>
+
+
+<tagname attribute1="value of attribute1"  attribute2="value of attribute2"    >text on element</tagname>
+
+
+1) xpath based on tagname and attribute
+
+//tagname[@attribute='value of attribute']
+
+//input[@id='username']
+
+//input[@class='login_input' and @type='text']
+
+2) xpath based on tagname and text 
+
+
+//tagname[text()='text on webelement']
+
+//a[text()='New User Register Here']
+
+3) xpath contains method
+
+//xpath[contains(@attribuute,'subset of value of attribute')]
+
+//xpath[contains(text(),'subset of text on webelement')]
+
+//img[contains(@src,'ios-button')]
+
+4) using xpath parent axes 
+
+//div[text()='Make Money with Us']/parent::div
+
+
+????????????????????????????????????????????????
+Assignment
+
+https://www.pepperfry.com/
+
+find no of links in "Partner With Us" module and print the
+text on links
+
+?????????????????????????????????????????????????????
+
+									
+*******************************************
+Season -2 Selenium   
+Day  - 13th October - Friday
+*******************************************								
+					
+Exception in thread "main" org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.71)	
+
+Reason : there is a change in DOM (Document object Model) 
+Webdriver finds the refrence becoming old 
+
+Solution :
+
+create object or new reference of WebElements 
+
+Dropdown Testing :
+
+to find items in dropdown ,
+
+Method 1: 
+items have tagname "option"
+
+WebElement dropdown=driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
+		
+		List<WebElement> allItems=dropdown.findElements(By.tagName("option"));
+		
+Method 2:
+
+	//using Select class method getOptions():List<WebElement>
+		
+		List<WebElement> allItems=new Select(driver.findElement(By.xpath("//select[@id='searchDropdownBox']"))).getOptions();
+				
+============================
+TestNG
+============================
+unit testing framework
+
+Java : junit , testNG
+
+python : pytest ,unittest
+
+.net: Nunit 
+
+
+testNG  = Junit + Nunit 
+
+in TestNG , NG means Next Generation
+
+how to install TestNG plugin?
+
+- In Eclipse 
+
+go to "help" --> "Eclipse Market place"
+
+enter testng in "find" text fields
+
+click on "go" button
+
+
+you will see "TestNG for Eclipse" plugin 
+
+click on "Install"
+  		
+
+
+
+  
+									
 
 
 
