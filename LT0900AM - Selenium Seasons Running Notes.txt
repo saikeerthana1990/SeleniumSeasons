@@ -761,10 +761,239 @@ you will see "TestNG for Eclipse" plugin
 click on "Install"
   		
 
+*******************************************
+Season -2 Selenium   
+Day  - 14th October - Saturday
+*******************************************
 
 
+
+Annotations in TestNG
+
+
+@Test
+public void testName()
+{
+
+
+} 
+
+@Test ==> means Test Case / Test Script
+
+if more than 1 @Test in a class , order of exection will be ascending order of testname 
+
+Parameters for @Test :
+
+
+@BeforeMethod will be executed before each and every @Test in that class
+
+@BeforeMethod
+public void setUp()
+{
+
+}
   
+
+@AfterMethod will be executed after each and every @Test in that class
+
+@AfterMethod
+public void setUp()
+{
+
+}
+  									
+================================
+Miscellenous Actions
+================================
+
+
+Mouse HOver : 
+
+org.openqa.selenium.interactions
+
+
+Actions 
+
+Actions(WebDriver)
+
+moveToElement(WebElement)
+moveToElement(WebElement, int, int)
+
+
+*******************************************
+Season -2 Selenium   
+Day  - 15th October - Sunday
+*******************************************
+----------------------------------------------------
+to right Click :
+
+contextClick()
+contextClick(WebElement)
+
+------------------------------------------------------
+To Drag and Drop 
+
+
+dragAndDrop(WebElement, WebElement): argument 1 is source , argument 2 is destination
+
+dragAndDropBy(WebElement, int, int)
+
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='draggable']"}
+
+
+NoSuchElementException:
+
+Reason 1: the locator strategy may be incorrect 
+
+Solution 1: correct the locator
+
+Reason 2: there may be synchonization issue (means page may be loaded slow)
+
+Solution 2 : need to implementation some waits technique (Thread.sleep , implicit waits ...)
+
+
+Reason 3 : element may be present in a frame 
+
+Solution 3: need to switch to frame 
+
+????????????????????????????????????????
+Assignment 
+
+in https://emicalculator.net/
+
+drag "Home Loan Amount" to 75 lakhs 
+
+drag "Interest Rate" to 12.5
+
+drag "Loan Tenure" 15 years 
+
+hint : use dragAndDropBy(WebElement, int, int)
+
+??????????????????????????????????????????
+
+
+=======================================================
+Handling Mutltiple Windows or Tabs
+=======================================================
+
+
+getWindowHandle() : String
+
+getWindowHandles() : Set<String>
+
+switchTo(): TargetLocator
+
+//ul[@class='topsocial']/child::li/child::a[contains(@href,'facebook')]
+
+or
+
+//ul[@class='topsocial']/descendant::a[contains(@href,'facebook')]
+
+
+//span[text()='Email address or phone number']/following-sibling::input
+
+
+
+//iframe[contains(@name,'notification-frame')]
+
+
+//a[@class='close']
+
+
+
+*******************************************
+Season -2 Selenium   
+Day  - 16th October - Monday
+*******************************************
+
+
+Multiple Frame Handling :
+
+
+Frame is UI technology to include several pages in a window 
+
+
+
+									Frame
 									
+									
+					frame							iframe
+
+
+driver.switchTo():TargetLocator					
+									
+	
+
+frame(int) : here int means the index of frame/iframe from root starting from 0 
+frame(String): here String is name or id attribute of frame/iframe 
+frame(WebElement): here focus on Frame as WebElement 
 
 
 
+	
+defaultContent()
+
+parentFrame()									
+
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id demo-frame
+
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id contents
+
+
+
+*******************************************
+Season -2 Selenium   
+Day  - 17th October - Tuesday
+*******************************************
+
+Alert(I)
+
+accept():void ==> this will click "Ok" button alert 
+dismiss():void    ==>this will click "Cancel" button 
+getText():String ==> this will return text present on alert
+sendKeys(String):  ==> this will type the choice/text  in alert box
+
+driver.switchTo().alert():Alert
+
+
+Please enter a valid user name
+
+??????????????????????????????????????????????
+Assignment
+
+in https://demo.guru99.com/v4/
+
+User ID :	mngr266311
+Password :	Admin123$
+
+do login ..then 
+click on "Delete customer"
+
+Enter some "Customer ID	" and then click on "Submit" button 
+
+verify text on alert?
+
+"Do you really want to delete this Customer?"
+
+then click "ok" on alert
+
+then switch to one more alert 
+
+verify the text on that alert to be ?
+
+"Customer does not exist!!"
+
+and then click on "Ok"
+
+??????????????????????????????????????????????????
+
+Assignment :
+
+1. Navigate to URL : "http://demo.guru99.com/test/guru99home/"
+2. Click on the "JMeter Made easy" image.
+3. Switch to the newly appeared window.
+4. Scroll to the bottom of the screen.
+5. Verify/print the top tutorials values present on the screen.
+
+??????????????????????????????????????????????????????????
