@@ -997,3 +997,44 @@ Assignment :
 5. Verify/print the top tutorials values present on the screen.
 
 ??????????????????????????????????????????????????????????
+
+*******************************************
+Season -2 Selenium   
+Day  - 18th October - Wednesday
+*******************************************
+
+How to take Screenshot 
+
+
+TakesScreenshot(I)
+
+getScreenshotAs(OutputType<X>):X 
+
+
+OutputType<T>
+
+BASE64 : OutputType<String>
+BYTES : OutputType<byte[]>
+FILE : OutputType<File>
+
+File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		FileUtils.copyFile(srcFile, new File("Adactin"+date+".png"));
+		
+
+
+https://jenkov.com/tutorials/java-internationalization/simpledateformat.html
+
+
+-----------------------------
+JavaScriptExecutor(I)
+
+
+executeScript(String, Object...):object 
+
+String is javascript statement 
+
+e.g window.scrollBy(0, 1000);
+
+
+
