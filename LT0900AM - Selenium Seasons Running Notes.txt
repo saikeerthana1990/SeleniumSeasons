@@ -1037,4 +1037,115 @@ String is javascript statement
 e.g window.scrollBy(0, 1000);
 
 
+*******************************************
+Season -2 Selenium   
+Day  - 19th October - Thursday
+*******************************************
+
+
+To Scroll to  bottom of page 
+
+window.scrollBy(0,document.body.scrollHeight)
+
+
+
+To scroll to some element in a web page 
+
+const element = document.getElementById("content");
+element.scrollIntoView();
+
+
+
+========================================================
+Synchronization techniques 
+or
+Waits in Selenium
+or 
+Timeouts in Selenium
+=========================================================
+
+1. using Hard Waits
+
+Thread.sleep() : not encouraged in real time projects 
+
+2.using implicit wait
+
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+this statement is implied for all driver.findElement statement 
+
+*******************************************
+Season -2 Selenium   
+Day  - 20th October - Friday
+*******************************************
+
+3.using Explicit Waits
+
+
+Wait(I)
+   until(
+WebDriverWait(C)
+
+WebDriverWait(WebDriver, long)
+
+
+ExpectedConditions
+
+		
+		WebDriverWait myWait=new WebDriverWait(driver, 30);
+		
+		myWait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath("//span[@id='spinner']"))));
+
+
+4. Fluent Wait 
+
+
+improvements for Explicit Wait 
+
+-> here second paramters is always SECONDS 
+withTimeout(Duration.ofSeconds(30))
+
+-> polling time is always 500 millis 
+ .pollingEvery(Duration.ofMillis(300))
+
+-> No inbuilt exception handling mechanism
+
+
+FluentWait(T)
+
+
+================================
+WebTable
+							WebTables
+							
+							
+		Static                                Dynamic 					
+							
+
+
+<table
+	<th
+	<tbody 
+	      <tr 
+		     <td
+			 <td 
+		  <tr 
+		     <td
+			 <td 
+			 
+			 
+//table/tbody/tr[1]/td[1]    //table/tbody/tr[1]/td[2]  ....... //table/tbody/tr[1]/td[8]
+//table/tbody/tr[2]/td[1]
+:
+:
+
+//table/tbody/tr[36]/td[1]
+
+
+String part1="//table/tbody/tr[";
+
+String part2="]/td["
+
+String part3="]";
+
 
